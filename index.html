@@ -1,1 +1,30 @@
+<html>  
 
+<head>  
+
+<title> numarator de zile</title> 
+
+</head>
+
+<script>  
+
+alert (" acest program calculeaza o numarul de zile intre azi si o anumita data din trecut (de exemplu il poti folosi pentru a numara numarul de zile cara au trecut de cand te ai nascut)")
+alert ("in JS Ianuarie=0 si Decembrie=11 ")
+
+var an = prompt ("anul"); 
+var luna = prompt ("luna"); 
+var ziua = prompt ("ziua"); 
+var astazi = new Date; 
+var ziua_ta = new Date (an,luna,ziua); 
+var k; 
+k=astazi-ziua_ta;  
+k=k/1000; 
+k=k/60; 
+k=k/60; 
+k=k/24; 
+document.write(k); document.write(" de zile");
+ 
+
+</script>
+
+</html>
